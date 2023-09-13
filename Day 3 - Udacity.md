@@ -1,4 +1,4 @@
-### Day 0: [9/13/2023, 14:30-]
+### Day 0: [9/13/2023, 14:30-18:34]
 - **Today's Progress**: reviewed #HTML_element's, the #HTML_element_div, #HTML_element_li, #HTML_element_block & #HTML_element_inline, #HTML_element_nest, #HTML_element_a.
 - **Thoughts:** unsure why under my h2 tag the text inside the p element is as big as the heading. i was missing the slash. my recollections of my original time studying this info is flooding back as i progress, not hiccups in 2nd or 3rd pomo, mostly note taking & syntax practice in VSc.
 
