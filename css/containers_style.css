@@ -20,5 +20,10 @@
 }
 
 .container{
- float: right;
+ /* float: right; */
+ display: flex;
+ flex-wrap: wrap;
+ /* adding border of 5px */
+ border: 5px solid black;
+ width: 200px;
 }
