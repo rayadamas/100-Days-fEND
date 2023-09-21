@@ -1,23 +1,17 @@
-/* styling a simple tic-tac-toe display that used an unordered list and list items*/
-
 ul {
-    width: 300px;
-    height: 300px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #000;
-    list-style: none;
-}   
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 li {
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #000;
-    font-size: 50px;
-    text-align: center;
-    line-height: 100px;
-    cursor: pointer;
+  width: 90px;
+  height: 90px;
+  font-size: 75px;
+  font-family: "Arial", sans-serif;
+  background-color: pink;
+  margin: 5px;
+  list-style: none;
+  text-align: center;
 }
