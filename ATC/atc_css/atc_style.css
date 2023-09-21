@@ -1,0 +1,65 @@
+/* add your CSS here */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ width: 100%;
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: rgb(199, 141, 17);
+ line-height: 1.5;
+}
+
+
+.container {
+ width: fit-content;
+ margin: 0 auto;
+ border-style: double;
+ border-width: 8px;
+ box-shadow: 0 0 15px rgb(0, 0, 0, 0.4);
+ border-radius: 50px 50px 50px 50px;
+}
+
+img {
+ width: 300px;
+ align-items: center;
+ margin-left: 100px;
+ margin-bottom: 10px;
+ border-radius: 50px 50px 50px 50px;
+}
+
+.interesting-fact {
+ /* <em> = HTML equivalent */
+ font-style: italic;
+}
+
+.label {
+ font-weight: bold;
+}
+
+ul {
+ list-style-type: none;
+}
+
+li {
+ padding: 2px ;
+}
+
+h2 {
+ padding: 25px 25px 25px 25px;
+ color: rgb(228, 228, 228);
+}
+
+section {
+ border-style: ridge;
+ border-width: 50%;
+ box-shadow: 0 0 15px rgb(0, 0, 0, 0.4);
+ border-color: indianred;
+ padding: 25px 25px 25px 25px;
+ border-radius: 50px 50px 50px 50px;
+}
