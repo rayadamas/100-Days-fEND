@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>grid area practice II</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 100px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas:
+          "hd hd hd hd"
+          "sd main main main"
+          "ft ft ft ft";
+        border: 7px solid black;
+      }
+
+      .box {
+        border: 1px solid silver;
+        background: goldenrod;
+      }
+
+      .header {
+        grid-area: hd;
+      }
+
+      .sidebar {
+        grid-area: sd;
+      }
+
+      .main {
+        grid-area: main;
+      }
+
+      .footer {
+        grid-area: ft;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header box">Header</div>
+      <div class="sidebar box">Sidebar</div>
+      <div class="main box">Main</div>
+      <div class="footer box">Footer</div>
+    </div>
+  </body>
+</html>
