@@ -1,0 +1,31 @@
+.container{
+ display: grid;
+ grid-template-columns: 300px 300px 300px;
+ grid-template-rows: 250px 600px;
+ grid-template-areas:
+ "hd hd hd hd hd hd hd hd"
+ "sd sd main main main main main main"
+ "ft ft ft ft ft ft ft ft";
+ border: 7px solid black;
+}
+
+.box {
+ border: 1px solid silver;
+ background: goldenrod;
+}
+
+.header {
+ grid-area: hd;
+}
+
+.sidebar {
+ grid-area: sd;
+}
+
+.content {
+ grid-area: main;
+}
+
+.footer {
+ grid-area: ft;
+}
