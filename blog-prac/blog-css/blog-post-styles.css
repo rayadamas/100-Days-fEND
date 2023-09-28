@@ -3,10 +3,10 @@
  grid-template-columns: 300px 300px 300px;
  grid-template-rows: 250px 600px;
  grid-template-areas:
- "hd hd hd hd hd hd hd hd"
- "feat feat feat feat feat feat feat feat"
- "main main main main main main main main"
- "ft ft ft ft ft ft ft ft";
+ "hd"
+ "feat"
+ "main"
+ "ft";
  border: 7px solid black;
 }
 .box {
@@ -25,4 +25,19 @@
 }
 .footer {
  grid-area: ft;
+}
+
+/* if screen is wide enough */
+@media (min-width: 900px) {
+ .container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 600px;
+  grid-template-areas:
+  "hd hd hd hd hd hd hd hd"
+  "feat feat feat feat feat feat feat feat"
+  "main main main main main main main main"
+  "ft ft ft ft ft ft ft ft";
+  border: 2px solid black;
+ }
 }
