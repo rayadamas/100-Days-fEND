@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Nested Grid</title>
-    <link rel="stylesheet">
+    <link rel="stylesheet" />
     <style>
-     #nestedGrid {
-         display: grid;
-         grid-template-columns: 50% 50%;
-         grid-template-rows: 50% 50%;
-         border: 3px solid black;
-     }
-     .photoBox {
-      width: 250px;
-      height: 150px;
-      border: 1px solid wheat;
-      background: plum;
-     }
-
+      #nestedGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        border: 3px solid black;
+      }
+      .photoBox {
+        width: 250px;
+        height: 150px;
+        border: 1px solid wheat;
+        background: plum;
+      }
     </style>
-   </head>
-<!-- Create nested grid in content -->
-<!-- make that grid an image gallery -->
-<body>
+  </head>
+  <!-- Create nested grid in content -->
+  <!-- make that grid an image gallery -->
+  <body>
     <div class="container">
-        <div class="header box">Header</div>
-        <div class="sidebar box">Blog Posts</div>
-        <div class="content box"></div>
-        <div class="photoBox"></div>
+      <div class="header box">Header</div>
+      <div class="sidebar box">Blog Posts</div>
+      <div class="content box">
+        <div id="nestedGrid">
+          <div id="one" class="photoBox"></div>
+          <div id="two" class="photoBox"></div>
+          <div id="three" class="photoBox"></div>
+          <div id="four" class="photoBox"></div>
+        </div>
+      </div>
+      <div class="footer box">Footer</div>
     </div>
-
-
-
-
-
-
+  </body>
 </html>
