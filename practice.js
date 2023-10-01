@@ -8,3 +8,9 @@
 console.log(31 + 13 - 2);
 console.log(210 / 5);
 console.log(142 % 5 + 40);
+
+// Quiz: Converting Temperatures
+// convert celsius to fahrenheit
+var celsius = 12;
+var fahrenheit = celsius * 1.8 + 32;
+console.log(fahrenheit);
