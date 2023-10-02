@@ -26,3 +26,14 @@ console.log(favoriteFood);
 // so it evaluates to true
 var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
 console.log(answer);
+
+// Quiz: All Tied Up
+// build a single string that resembles the following joke
+// Why couldn't the shoes go out and play?
+// They were all "tied" up!
+// Your joke should take the format of a question and answer.
+// The first line should be a question and the second line should be an answer.
+// Hint: You will need to use special characters to produce the following output.
+// For example, to insert quotation marks, you will need to use \".
+var joke = "Why couldn't the shoes go out and play?\nThey were all \"tied\" up!";
+console.log(joke);
