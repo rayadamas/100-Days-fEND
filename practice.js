@@ -48,3 +48,16 @@ console.log(joke);
 // For example, to insert a line break, you will need to use \n.
 var haiku = "Blowing from the west\n" + "Fallen leaves gather\n" + "In the east.";
 console.log(haiku);
+
+// Quiz: Semicolons!
+// Correct the following code to print out the letter 'A'
+// You may only add code below the line
+var thingOne = "red";
+var thingTwo = "blue";
+console.log(thingOne + " " + thingTwo);
+
+// Quiz: What's my Name?
+// Create a variable called fullName and assign it your full name as a string.
+var fullName = "Diamond Ray";
+console.log(fullName);
+
