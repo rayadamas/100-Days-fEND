@@ -47,3 +47,4 @@ console.log(joke);
 // Hint: You will need to use special characters to produce the following output.
 // For example, to insert a line break, you will need to use \n.
 var haiku = "Blowing from the west\n" + "Fallen leaves gather\n" + "In the east.";
+console.log(haiku);
