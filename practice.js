@@ -85,3 +85,16 @@ var adjective3 = "entertaining";
 // Assign the resulting string to a variable called madLib.
 var madLib = "The Intro to JavaScript course is " + adjective1 + ". James and Julia are so " + adjective2 + ". I cannot wait to work through the rest of this " + adjective3 + " content!";
 console.log(madLib);
+
+// Quiz: One Awesome Message
+// Here are two awesome messages:
+// Hi, my name is Julia. I love cats. In my spare time, I like to play video games.
+// Hi, my name is James. I love baseball. In my spare time, I like to read.
+// Declare and assign values to three variables for each part of the sentence that changes (firstName, interest, and hobby).
+// Use your variables and string concatenation to create your own awesome message and store it in an awesomeMessage variable.
+// Finally, print your awesome message to the JavaScript console.
+var firstName = "Diamond";
+var interest = "getting money";
+var hobby = "aquire funds";
+var awesomeMessage = "Hi, my name is " + firstName + ". I love " + interest + ". In my spare time, I like to " + hobby + ".";
+console.log(awesomeMessage);
