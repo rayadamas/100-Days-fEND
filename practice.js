@@ -37,3 +37,13 @@ console.log(answer);
 // For example, to insert quotation marks, you will need to use \".
 var joke = "Why couldn't the shoes go out and play?\nThey were all \"tied\" up!";
 console.log(joke);
+
+// Quiz: Yosa Buson
+// Build a string using concatenation by combining the lines from this famous haiku poem by Yosa Buson.
+// Blowing from the west
+// Fallen leaves gather
+// In the east.
+// Each string should be printed on its own line.
+// Hint: You will need to use special characters to produce the following output.
+// For example, to insert a line break, you will need to use \n.
+var haiku = "Blowing from the west\n" + "Fallen leaves gather\n" + "In the east.";
