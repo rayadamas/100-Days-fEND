@@ -14,3 +14,9 @@ console.log(142 % 5 + 40);
 var celsius = 12;
 var fahrenheit = celsius * 1.8 + 32;
 console.log(fahrenheit);
+
+// Quiz: Favorite Food
+// create a string with the name of your favorite food
+// and save it to a variable called favoriteFood
+var favoriteFood = "Stir Fry";
+console.log(favoriteFood);
