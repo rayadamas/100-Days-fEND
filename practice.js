@@ -20,3 +20,9 @@ console.log(fahrenheit);
 // and save it to a variable called favoriteFood
 var favoriteFood = "Stir Fry";
 console.log(favoriteFood);
+
+// Quiz: String Equality for All
+// fix the right side of the expression
+// so it evaluates to true
+var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
+console.log(answer);
