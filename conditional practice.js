@@ -54,3 +54,11 @@ else if (musicians === 4) {
 else if (musicians > 4) {
  console.log("this is a large group");
 }
+
+(3 != 6 % 3) && !(24 > 45) && (!false); // true
+// explain why this expression returns true
+// 3 != 6 % 3 // true
+// !(24 > 45) // true
+// (!false) // true
+// true && true && true // true
+//
