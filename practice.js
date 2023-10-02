@@ -61,3 +61,27 @@ console.log(thingOne + " " + thingTwo);
 var fullName = "Diamond Ray";
 console.log(fullName);
 
+// Quiz: Out to Dinner
+// Create a variable called bill and assign it the result of 10.25 + 3.99 + 7.15
+// (don't perform the calculation yourself, let JavaScript do it!).
+// Next, create a variable called tip and assign it the result of multiplying bill by a 15% tip rate.
+// Finally, add the bill and tip together and store it into a variable called total.
+// Print the total to the JavaScript console.
+var bill = 10.25 + 3.99 + 7.15;
+console.log(bill);
+var tip = bill * 0.15;
+console.log(tip);
+var total = bill + tip;
+console.log(total);
+
+// Quiz: Mad Libs
+// Mad Libs is a word game where players have fun substituting words for blanks in a story.
+// For this exercise, use the adjective variables below to fill in the blanks and complete the following message.
+// "The Intro to JavaScript course is __________. James and Julia are so __________.
+// I cannot wait to work through the rest of this __________ content!"
+var adjective1 = "amazing";
+var adjective2 = "fun";
+var adjective3 = "entertaining";
+// Assign the resulting string to a variable called madLib.
+var madLib = "The Intro to JavaScript course is " + adjective1 + ". James and Julia are so " + adjective2 + ". I cannot wait to work through the rest of this " + adjective3 + " content!";
+console.log(madLib);
