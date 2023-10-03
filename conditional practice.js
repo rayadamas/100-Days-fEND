@@ -280,3 +280,29 @@ if (shirtWidth >= 18 && shirtWidth < 20 && shirtLength >= 28 && shirtLength < 29
 } else {
   console.log("NA");
 }
+
+// Navigating the Food Chain
+/*
+## Directions:
+
+Write a series of ternary statements that sets the variable `category` equal to:
+
+- `"herbivore"` if an animal eats plants
+- `"carnivore"` if an animal eats animals
+- `"omnivore"` if an animal eats plants and animals
+- `"undefined"` if an animal doesn't eat plants or animals
+
+Use the `eatsPlants` and `eatsAnimals` variables to test your code.
+
+> **TIP:** Make sure to test your code with different values. For example,  
+>   
+> If `eatsPlants` equals `true` and `eatsAnimals` equals `false`, then `herbivore` should be printed to the console.
+    
+    */
+
+// change the values of `eatsPlants` and `eatsAnimals` to test your code
+let eatsPlants = !true;
+let eatsAnimals = !false;
+
+var category = eatsAnimals ? (eatsPlants ? "omnivore" : "herbivore") : eatsPlants (eatsAnimals ? "carnivore" : "undefined");
+console.log(category);
