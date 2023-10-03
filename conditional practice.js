@@ -254,5 +254,29 @@ Then print `N/A` to the console because the measurements don't all match up wi
  * 6. Your code should not be empty
  * 7. BE CAREFUL ABOUT THE EXACT CHARACTERS TO BE PRINTED
 
-
 */
+
+//
+
+// change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
+let shirtWidth = 19; // Test different values for shirtWidth
+let shirtLength = 28; // Test different values for shirtLength
+let shirtSleeve = 8.21; // Test different values for shirtSleeve
+let size = "";
+
+// Add your logical expressions here to determine the size of the t-shirt based on the measurements
+if (shirtWidth >= 18 && shirtWidth < 20 && shirtLength >= 28 && shirtLength < 29 && shirtSleeve >= 8.13 && shirtSleeve < 8.38) {
+  console.log("S");
+} else if (shirtWidth >= 20 && shirtWidth < 22 && shirtLength >= 29 && shirtLength < 30 && shirtSleeve >= 8.38 && shirtSleeve < 8.63) {
+  console.log("M");
+} else if (shirtWidth >= 22 && shirtWidth < 24 && shirtLength >= 30 && shirtLength < 31 && shirtSleeve >= 8.63 && shirtSleeve < 8.88) {
+  console.log("L");
+} else if (shirtWidth >= 24 && shirtWidth < 26 && shirtLength >= 31 && shirtLength < 32 && shirtSleeve >= 8.88 && shirtSleeve < 9.13) {
+  console.log("XL");
+} else if (shirtWidth >= 26 && shirtWidth < 28 && shirtLength >= 32 && shirtLength < 33 && shirtSleeve >= 9.13 && shirtSleeve < 9.38) {
+  console.log("2XL");
+} else if (shirtWidth >= 28 && shirtWidth < 30 && shirtLength >= 33 && shirtLength < 34 && shirtSleeve >= 9.38 && shirtSleeve < 9.63) {
+  console.log("3XL");
+} else {
+  console.log("NA");
+}
