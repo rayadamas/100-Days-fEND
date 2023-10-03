@@ -306,3 +306,5 @@ let eatsAnimals = !false;
 
 var category = eatsAnimals ? (eatsPlants ? "omnivore" : "herbivore") : eatsPlants (eatsAnimals ? "carnivore" : "undefined");
 console.log(category);
+
+// Quiz: Back to School
