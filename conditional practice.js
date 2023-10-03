@@ -1,7 +1,7 @@
 /*
  * Programming Quiz: Even or Odd (3-2)
  *
- * Write an if...else statement that prints `even` if the 
+ * Write an if...else statement that prints `even` if the
  * number is even and prints `odd` if the number is odd.
  *
  * Note - make sure to print only the string "even" or the string "odd"
@@ -13,15 +13,14 @@
  * 2. Your conditional should use a strict comparison (`===` or `!==`), and use the modulo ( `%` ) operator
  * 3. Your code should produce the expected output - "even" or "odd" using console.log() method
  */
- 
- 
+
 // change the value of `number` to test your if...else statement
 var number = 2;
 
 if (number % 2 === 0) {
-    console.log("even");
+  console.log("even");
 } else {
-    console.log("odd");
+  console.log("odd");
 }
 
 // Quiz: Musical Groups
@@ -39,23 +38,20 @@ if (number % 2 === 0) {
 // change the value of `musicians` to test your conditional statements
 var musicians = 5;
 if (musicians <= 0) {
- console.log("not a group");
+  console.log("not a group");
 } else if (musicians === 1) {
- console.log("solo");
+  console.log("solo");
 } else if (musicians === 2) {
- console.log("duet");
-}
-else if (musicians === 3) {
- console.log("trio");
-}
-else if (musicians === 4) {
- console.log("quartet");
-}
-else if (musicians > 4) {
- console.log("this is a large group");
+  console.log("duet");
+} else if (musicians === 3) {
+  console.log("trio");
+} else if (musicians === 4) {
+  console.log("quartet");
+} else if (musicians > 4) {
+  console.log("this is a large group");
 }
 
-(3 != 6 % 3) && !(24 > 45) && (!false); // true
+3 != 6 % 3 && !(24 > 45) && !false; // true
 // explain why this expression returns true
 // 3 != 6 % 3 // true
 // !(24 > 45) // true
@@ -103,19 +99,49 @@ var weapon = "";
 var solved = false;
 
 if (room === "ballroom" && suspect === "Mr. Kalehoff") {
-    weapon = "poison";
-    solved = true;
+  weapon = "poison";
+  solved = true;
 } else if (room === "billiards room" && suspect === "Mrs. Sparr") {
-    weapon = "pool stick";
-    solved = true;
+  weapon = "pool stick";
+  solved = true;
 } else if (room === "gallery" && suspect === "Ms. Van Cleve") {
-    weapon = "trophy";
-    solved = true;
+  weapon = "trophy";
+  solved = true;
 } else if (room === "dining room" && suspect === "Mr. Parkes") {
-    weapon = "knife";
-    solved = true;
+  weapon = "knife";
+  solved = true;
 }
 
 if (solved) {
-    console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+  console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+}
+
+// Quiz: Checking Your Balance
+/*
+ * QUIZ REQUIREMENTS
+ * 1. Your code should have the variables `balance`, `checkBalance`, `isActive`
+ * 2. Your code should include an `if...else` conditional statement
+ * 3. Your code should produce the expected output
+ * 4. Your code should not be empty
+ * 5. BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ *    For example, if balance is 325.00, then "Your balance is $325.00" should be printed to the console
+ * To print out the account balance w/ decimal points, use `toFixed(2)`
+ */
+
+var balance = 325.0;
+var isActive = true;
+var checkBalance = true;
+
+if (checkBalance) {
+  if (isActive && balance > 0) {
+    console.log("Your balance is $" + balance.toFixed(2));
+  } else if (isActive && balance === 0) {
+    console.log("Your balance is $0.00");
+  } else if (isActive && balance < 0) {
+    console.log("Your balance is negative");
+  } else if (!isActive) {
+    console.log("Your account is not active");
+  } else {
+    console.log("Have a nice day!");
+  }
 }
