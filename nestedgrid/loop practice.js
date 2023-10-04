@@ -15,16 +15,16 @@
 var x = 1;
 
 while (x <= 20) {
- if (x % 3 === 0 && x % 5 === 0) {
-  console.log("JuliaJames");
- } else if (x % 3 === 0) {
-  console.log("James");
- } else if (x % 5 === 0) {
-  console.log("Julia");
- } else {
-  console.log(x);
- }
- x++;
+  if (x % 3 === 0 && x % 5 === 0) {
+    console.log("JuliaJames");
+  } else if (x % 3 === 0) {
+    console.log("James");
+  } else if (x % 5 === 0) {
+    console.log("Julia");
+  } else {
+    console.log(x);
+  }
+  x++;
 }
 
 /*
@@ -53,19 +53,40 @@ while (x <= 20) {
 var num = 99;
 
 while (num >= 1) {
- if (num === 2) {
-  console.log(num + " bottles of juice on the wall! " + num + " bottles of juice! Take one down, pass it around... " + (num - 1) + " bottle of juice on the wall!");
- } else if (num === 1) {
-  console.log(num + " bottle of juice on the wall! " + num + " bottle of juice! Take one down, pass it around... " + (num - 1) + " bottles of juice on the wall!");
- } else {
-  console.log(num + " bottles of juice on the wall! " + num + " bottles of juice! Take one down, pass it around... " + (num - 1) + " bottles of juice on the wall!");
- }
- num--;
+  if (num === 2) {
+    console.log(
+      num +
+        " bottles of juice on the wall! " +
+        num +
+        " bottles of juice! Take one down, pass it around... " +
+        (num - 1) +
+        " bottle of juice on the wall!"
+    );
+  } else if (num === 1) {
+    console.log(
+      num +
+        " bottle of juice on the wall! " +
+        num +
+        " bottle of juice! Take one down, pass it around... " +
+        (num - 1) +
+        " bottles of juice on the wall!"
+    );
+  } else {
+    console.log(
+      num +
+        " bottles of juice on the wall! " +
+        num +
+        " bottles of juice! Take one down, pass it around... " +
+        (num - 1) +
+        " bottles of juice on the wall!"
+    );
+  }
+  num--;
 }
 
 /*
  * Programming Quiz: Countdown, Liftoff! (4-3)
- * 
+ *
  * Using a while loop, print out the countdown output above.
  */
 
@@ -76,6 +97,33 @@ while (num >= 1) {
  * - Your code should produce the expected output, as explained above
  * - Your code should not be empty
  * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ * Orbiter transfers from ground to internal power (T-50 seconds)
+   Ground launch sequencer is go for auto sequence start (T-31 seconds)
+   Activate main engine hydrogen burnoff system (T-10 seconds)
+   Main engine start (T-6 seconds)
+   Solid rocket booster ignition and liftoff! (T-0 seconds)
  */
 
 // change the value of `num` to test your code
+var sec = 60;
+
+while (sec >= 0) {
+  if (sec === 50) {
+    console.log(
+      "Orbiter transfers from ground to internal power (T-50 seconds)"
+    );
+  } else if (sec === 31) {
+    console.log(
+      "Ground launch sequencer is go for auto sequence start (T-31 seconds)"
+    );
+  } else if (sec === 10) {
+    console.log("Activate main engine hydrogen burnoff system (T-10 seconds)");
+  } else if (sec === 6) {
+    console.log("Main engine start (T-6 seconds)");
+  } else if (sec === 0) {
+    console.log("Solid rocket booster ignition and liftoff! (T-0 seconds)");
+  } else {
+    console.log("T-" + sec + " seconds");
+  }
+  sec--;
+}
