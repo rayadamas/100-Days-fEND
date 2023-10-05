@@ -162,3 +162,5 @@ while (x >= 1) {
 for (var x = 9; x >= 1; x--) {
   console.log("hello " + x);
 }
+
+// The for loop below has an error. Fix it!
