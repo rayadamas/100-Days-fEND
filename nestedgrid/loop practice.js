@@ -190,3 +190,19 @@ for (var f = 1; f <= 12; f++) {
   factorial *= f;
   console.log(f + "! = " + factorial);
 }
+
+// Find my Seat
+/* Write a nested for loop to print out all of the different seat combinations in a theater.
+The first loop should print out the rows, and the second loop should print out the seats within each row.
+
+The first row-seat combo should be 0-25
+The last row seat combo should be 25-25
+
+
+*/
+
+for (var row = 0; row <= 25; row++) {
+  for (var seat = 0; seat <= 25; seat++) {
+    console.log(row + "-" + seat);
+  }
+}
