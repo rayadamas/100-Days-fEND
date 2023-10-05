@@ -176,6 +176,17 @@ for (var x = 9; x >= 1; x--) {
  */
  
 // fix the for loop
-for (var k = 0; k < 200; k++) { // added semicolons
+for (var k = 0; k < 3; k++) { // added semicolons
  console.log(k);
+}
+
+
+// Write a for (note: not a function) loop that prints out the factorial of the number 12:
+
+// A factorial is calculated by multiplying a number by all the numbers below it. For instance, 3! or "3 factorial" is 3 * 2 * 1 = 6
+
+let factorial = 1;
+for (var f = 1; f <= 12; f++) {
+  factorial *= f;
+  console.log(f + "! = " + factorial);
 }
