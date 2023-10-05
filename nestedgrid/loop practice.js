@@ -164,3 +164,18 @@ for (var x = 9; x >= 1; x--) {
 }
 
 // The for loop below has an error. Fix it!
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should use a `for` loop
+ * - Your `for` loop should specify a starting condition `k` with the value of `0`
+ * - Your `for` loop should have a stop condition for the value of `k`
+ * - Your `for` loop should increment `k` each time it executes
+ * - Your code should produce the expected output, as explained above
+ * - Your code should not be empty
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+ 
+// fix the for loop
+for (var k = 0; k < 200; k++) { // added semicolons
+ console.log(k);
+}
