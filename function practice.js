@@ -83,3 +83,21 @@ function buildTriangle(x) {
 }
 
 console.log(buildTriangle(5));// this will print 5 lines of asterisks
+
+// Anonymous Function
+var myFunction = function() {
+  // Function body
+  console.log("This is an anonymous function");
+};
+
+// Calling the anonymous function
+myFunction();
+
+// Function Expression
+var myFunction = function() {
+  // Function body
+  console.log("This is a function expression");
+}
+
+// Calling the function expression
+myFunction();
