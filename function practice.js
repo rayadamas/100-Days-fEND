@@ -74,3 +74,12 @@ function makeLine(length) {// makeLine = function
   return line + "\n";
 }
 
+function buildTriangle(x) {
+  var triangle = "";// line = ""; local variable
+  for (var i = 1; i <= x; i++) {
+   triangle += makeLine(i);// line = line + makeLine(i);
+  }
+  return triangle;
+}
+
+console.log(buildTriangle(5));// this will print 5 lines of asterisks
