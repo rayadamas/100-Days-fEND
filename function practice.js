@@ -45,3 +45,32 @@ function laughing(num) {
 }
 
 console.log(laughing(5));
+
+// Build a Triangle
+
+/*
+For this quiz, you're going to create a function called buildTriangle() that will accept
+an input (the triangle at its widest width) and will return the string representation of a triangle.
+* 
+* * 
+ ***  
+ ***  * 
+ ***  * * 
+ ***   ***  
+ ***   ***  * 
+ ***   ***  * * 
+ ***   ***   ***  
+* * * * * * * * * *
+We've given you one function `makeLine()` to start with. The function takes in a line length, and builds a line of asterisks and returns
+the line with a newline character.
+*/
+
+// this will need to be called in the buildTriangle() function
+function makeLine(length) {// makeLine = function
+  var line = "";// line = ""; local variable
+  for (var j = 1; j <= length; j++) {
+    line += "* "// line = line + "*";
+  }
+  return line + "\n";
+}
+
