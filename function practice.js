@@ -101,3 +101,28 @@ var myFunction = function() {
 
 // Calling the function expression
 myFunction();
+
+// Inline Function
+function myJuice(truthfulStatement, name) {
+ truthfulStatement(name);
+}
+
+myJuice(function bestJuice(name) {// bestJuice = function body (local variable)
+  console.log(name + " is the best juice!");
+}, "Orange");// this is a callback function that will be called with the name as an argument
+
+// Laugh 
+/*
+Write an anonymous function that stores a function in a variable called "laugh" and
+outputs the number of "ha"s that you pass in as an argument.
+*/
+
+var LOL = "";// LOL = ""; local variable 
+var laugh = function(num) {// var laugh = function
+  for (var i = 0; i < num; i++) {
+    LOL += "ha";// LOL = LOL + "ha";
+  }
+  return "Boy that was funny... " + LOL + "!";
+};
+
+console.log(laugh(5));// this will print "Boy that was funny... hahaha!"
