@@ -138,3 +138,26 @@ var cry = function() {
 };
 
 console.log(cry());// this will print "boohoo!"
+
+// Inline
+/*
+Call the emotions() function so that it prints the output below, but instead of passing in
+laugh() as an argument, pass an inline function instead.
+emotions("happy", laugh(2)); // you can use your laugh function from the previous quizzes here
+*/
+
+// don't change this code
+function emotions(myString, myFunc) {
+  console.log("I am " + myString + ", " + myFunc(2));
+}
+
+// Call the emotions() function with two arguments
+// Argument 1 - "happy" string
+// Argument 2 - an inline function expression
+emotions("happy", function laugh(x) {// parenthesis is important here to make it an inline function expression
+ var LOL = '';
+ for (var i = 0; i < num; i++) {
+   LOL += "ha";
+ }
+ return "Boy that was funny... " + LOL + "!";
+});
