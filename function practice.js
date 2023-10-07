@@ -126,3 +126,15 @@ var laugh = function(num) {// var laugh = function
 };
 
 console.log(laugh(5));// this will print "Boy that was funny... hahaha!"
+
+// Cry
+/*
+Write a function expression that stores the function in a variable called `cry` and
+returns "boohoo!". Make sure you call the function using the variable name.
+*/
+
+var cry = function() {
+  return "boohoo!";
+};
+
+console.log(cry());// this will print "boohoo!"
