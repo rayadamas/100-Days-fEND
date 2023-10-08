@@ -156,7 +156,7 @@ function emotions(myString, myFunc) {
 // Argument 2 - an inline function expression
 emotions("happy", function laugh(x) {// parenthesis is important here to make it an inline function expression
  var LOL = '';
- for (var i = 0; i < num; i++) {
+ for (var i = 0; i < x; i++) {
    LOL += "ha";
  }
  return "Boy that was funny... " + LOL + "!";
