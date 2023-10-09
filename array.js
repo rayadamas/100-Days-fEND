@@ -147,3 +147,50 @@ function hasEnoughPlayers(team) {
 }
 
 console.log(hasEnoughPlayers(team)); // prints out true to the console
+
+// Joining the Crew
+// In an earlier exercise, you created a crew array to represent Mal’s crew from the hit show Firefly.
+
+var captain = "Mal";
+var second = "Zoe";
+var pilot = "Wash";
+var companion = "Inara";
+var mercenary = "Jayne";
+var mechanic = "Kaylee";
+
+var crew = [captain, second, pilot, companion, mercenary, mechanic];
+// Later in the show, Mal takes on three new crew members named "Simon", "River", and "Book".
+// Use the push() method to add the three new crew members to the crew array.
+
+var doctor = "Simon";
+var sister = "River";
+var shepherd = "Book";
+
+crew.push(doctor, sister, shepherd);// adds "Simon", "River", and "Book" to the end of the array
+console.log(crew); // prints out the array to the console
+
+// Reverse Method
+var numbers = [1, 2, 3, 4, 5];
+numbers.reverse(); // reverses the order of the array
+console.log(numbers); // prints out the array to the console
+
+// Sort Method
+var letters = ["b", "d", "c", "a"];
+letters.sort(); // sorts the array
+console.log(letters); // prints out the array to the console
+
+// Shift Method
+var removed = letters.shift(); // removes the first element of the array
+console.log(letters); // prints out the array to the console
+console.log(removed); // prints out the removed element to the console
+
+// Splice Method
+var removed = letters.splice(1, 1); // removes the second element of the array
+console.log(letters); // prints out the array to the console
+console.log(removed); // prints out the removed element to the console
+
+// Join Method
+var name = ["D", "i", "a", "m", "o", "n", "d"];
+var joined = name.join(""); // joins the array into a string
+console.log(joined); // prints out the joined string to the console
+
