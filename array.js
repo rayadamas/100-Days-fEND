@@ -194,3 +194,16 @@ var name = ["D", "i", "a", "m", "o", "n", "d"];
 var joined = name.join(""); // joins the array into a string
 console.log(joined); // prints out the joined string to the console
 
+
+// Array Loops
+console.log(donuts);
+for (var i = 0; i < donuts.length; i++) {
+  donuts[i] += " munchkin";
+  console.log(donuts[i]);
+}
+
+// ForEach Loop
+words = ["what", "is", "up", 5];
+words.forEach(function(word, num, items) {
+  console.log("Value " + num + " in " + items.toString() + " is " + word);
+});
