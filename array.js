@@ -18,3 +18,17 @@ console.log(donuts[3]); // prints out undefined to the console
 
 donuts[2] ="french cruler"; // changes "chocolate" to "french cruler"
 console.log(donuts[2]); // prints out "french cruler" to the console
+
+// UdaciFamily
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `udaciFamily`
+ * - The variable `udaciFamily` should be an array containing the values `"Julia"`, `"James"`, and one other name
+ * - Your code should print `udaciFamily` to the console
+ * - BE CAREFUL ABOUT THE EXACT WORDS TO BE PRINTED.
+ */
+
+
+// your code goes here
+var udaciFamily = ["Julia", "James", "Rei"];
+console.log(udaciFamily);
