@@ -14,3 +14,7 @@ var arraysInArraysInArrays = [
 ]; // this is an array in an array in an array
 
 console.log(donuts[2]); // prints out "chocolate" to the console
+console.log(donuts[3]); // prints out undefined to the console
+
+donuts[2] ="french cruler"; // changes "chocolate" to "french cruler"
+console.log(donuts[2]); // prints out "french cruler" to the console
