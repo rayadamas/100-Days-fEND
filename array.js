@@ -207,3 +207,52 @@ words = ["what", "is", "up", 5];
 words.forEach(function(word, num, items) {
   console.log("Value " + num + " in " + items.toString() + " is " + word);
 });
+
+// Another Type of Loop
+// Use the array's forEach() method to loop over the following array and add 100 to each of the values if the value is divisible by 3.
+/*
+* Things to note:
+ *  - Inside the loop, you must use an `if` statement to verify code is divisible by 3
+ *  - Inside the loop, you can updade an element ONLY by using the arrayName[index]
+ *  - Outside the loop, you can use `console.log` to verify the `test` variable 
+ */
+
+var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
+
+test.forEach(function(value, index, array) {
+  if (value % 3 === 0) {// checks if the value is divisible by 3 using the modulus operator to check for a remainder of 0
+    console.log(value);// prints out the value if it is divisible by 3
+    array[index] += 100;// updates the array element by adding 100 to it
+    console.log(array[index]);// prints out the updated array element to the console
+  }
+});
+
+// Map Method
+console.log(donuts);
+var donuts = donuts.map(function(donut) {
+  donut += " toasted";
+  return donut;
+});
+console.log(donuts);
+
+// I Got Bills
+// Use the map() method to take the array of bill amounts shown below, and create a second array of numbers called totals
+// that shows the bill amounts with a 15% tip added.
+
+var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+// Print out the new totals array using console.log.
+
+/*
+* Use the .map() method to take the bills array below and create a second array
+ * of numbers called totals. The totals array should contains each amount from the
+ * bills array but with a 15% tip added. Log the totals array to the console.
+ *
+ * For example, the first two entries in the totals array would be:
+ *
+ * [57.76, 21.99, ... ]
+ *
+ * Things to note:
+ *  - each entry in the totals array must be a number
+ *  - each number must have an accuracy of two decimal points
+ */
+
