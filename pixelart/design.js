@@ -24,7 +24,22 @@ size.addEventListener("submit", function (e) {
 // instead we call makeGrid() with height & width arguements
 
 function makeGrid() {
-
- // Your code goes here!
- 
+ grid.innerHTML = ""; // innerHTML sets our markup to a blank canvas
+ for (row = 0; row < height.value && row <= 30; row++) {
+   // set row to 0 | height.value comes from user input | interates if value input is <=30. up to 31
+   let row = grid.insertRow(0);
+   // set to 0 as 
+   // dot notation insertRow adds new rows at 1st "horizontal" position of our grid
+   for (cell = 0; cell < width.value && cell <= 30; cell++) {
+     // set cell to 0 | width.value comes from user input | interates if value input is <=30. up to 31
+     let cell = row.insertCell(0);
+     // set to 0 as to begin at the start of our table
+     // dot notation insertCell adds new rows at 1st "verticle" position of our grid
+     cell.addEventListener("click", function (ev) {
+       // we 'listen' for click -> the 'submit' button
+       ev.target.style.backgroundColor = color.value;
+       // event prop ev returns style within grid|points to bg color|assigns value to user input
+     });
+   }
  }
+}
