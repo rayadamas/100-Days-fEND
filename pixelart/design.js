@@ -11,6 +11,17 @@ let width = document.getElementById("inputWidth"); // ref width input form via i
 let grid = document.getElementById("pixelCanvas"); // ref the space where table is created via pixelCanvas
 
 // When size is submitted by the user, call makeGrid()
+size.addEventListener("submit", function (e) {
+ // size DOM object 1st parm targets SUBMIT button
+ // 2nd parm is anon funct for click event to trigger function to be defined
+ e.preventDefault();
+ makeGrid(height.value, width.value);
+});
+// addEventListener method attaches an event handler(+function) to an element
+// to be called when its event is delivered to its target(element, document, window)
+
+// preventDefault will cancel a cancellable event, default actions not permitted
+// instead we call makeGrid() with height & width arguements
 
 function makeGrid() {
 
