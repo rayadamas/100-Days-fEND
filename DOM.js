@@ -53,3 +53,20 @@ function createAnimalTradingCardHTML(animal) {
 }
 
 console.log(createAnimalTradingCardHTML(cheetah));
+
+// Destructuring Arrays
+const point = [10, 25, -34, 100];
+const [x, y, z, w] = point;// x = 10, y = 25, z = -34, w = 100
+console.log(x, y, z, w);
+
+/*
+Use array destructuring to pull out the three colors from the array of things and store them into the variables one, two, and three.
+* Use destructuring to initialize the variables `one`, `two`, and `three`
+ * with the colors from the `things` array.
+*/
+
+const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'udacity', 'blue', 'dogs'];
+
+const [one,,,two,,,,three] = things;//The empty commas , are used to skip elements in the things array that we don't want to assign to variables.
+const colors = `List of Colors: ${one}, ${two}, ${three}`;
+console.log(colors);
