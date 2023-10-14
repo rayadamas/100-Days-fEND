@@ -115,3 +115,41 @@ for (const day of days) {
  //We use the toUpperCase() method to capitalize it. Then we add it to the rest of the string using the slice() method.
  //slice(1) returns the rest of the string beginning at the second character.
 }
+
+// Spread Operator
+const fruits = ["apples", "bananas", "pears"];
+const vegetables = ["corn", "potatoes", "carrots"];
+
+const produce = [...fruits, ...vegetables];
+
+
+console.log(produce);
+
+// Using the Rest Parameter
+/*
+Use the rest parameter to create an average() function that calculates the average of an unlimited amount of numbers.
+
+TIP: Make sure to test your code with different values. For example,
+
+average(2, 6) should return 4
+average(2, 3, 3, 5, 7, 10) should return 5
+average(7, 1432, 12, 13, 100) should return 312.8
+average() should return 0
+*/
+
+
+function average(...nums) {
+ let totalSum = 0;
+ let avg = 0;
+ for (const num of nums) {
+     totalSum += num;// total = total + num
+     numCnt = nums.length;
+ }
+ avg = totalSum / numCnt;
+ return avg;
+}
+
+console.log(average(2, 6));
+console.log(average(2, 3, 3, 5, 7, 10));
+console.log(average(7, 1432, 12, 13, 100));
+console.log(average());
