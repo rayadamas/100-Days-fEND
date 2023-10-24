@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
 - However, just because you _can_ use the `DOMContentLoaded` event to write JavaScript code in the `<head>` that doesn't mean you _should_ do this.
 ==N==
 # Add Page Content Efficiently
-
 ## Using A Loop To Add Content
 - Let's take another look at the `for` loop from the last module, but this time without all of the event listener stuff:
 ```
@@ -83,7 +82,7 @@ for (let i = 1; i <= 200; i++) {
 	- Since we want two hundred things done, the best way to do this is with a `for` loop, so that code is inescapable.
 		- However, the code _inside the `for` loop_ is not all that efficient, and there are quite a few things we could do to improve this code. We could:
 			- create some parent container element _outside of the loop_
-			- we could append all new paragraph elements to this parent container
+			- append all new paragraph elements to this parent container
 			- we append this parent container to the `<body>` element instead of appending each time through the loop
 	 ```
 	 const myCustomDiv = document.createElement('div');
